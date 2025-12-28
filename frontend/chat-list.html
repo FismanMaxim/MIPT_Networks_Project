@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Список чатов</title>
+  <link rel="stylesheet" href="chat-list.css" />
+</head>
+<body>
+
+  <div class="header">
+    <div class="nickname" id="userNickname"></div>
+    <button class="logout-btn" id="logoutBtn">Выйти</button>
+  </div>
+
+  <div class="chat-list-container">
+    <div class="new-chat">
+      <input type="text" id="newChatName" placeholder="Название нового чата" />
+      <button id="createChatBtn">Создать</button>
+    </div>
+    <div id="chatList"></div>
+  </div>
+
+  <script src="chat-list.js"></script>
+</body>
+</html>
