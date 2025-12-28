@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чат</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div id="nicknameDisplay"></div>
+    <button id="logoutBtn" class="logout-btn">Выйти</button>
+  </div>
+  <div class="chat-header">
+  <button id="backBtn" class="back-btn">Назад</button>
+  <div id="chatTitleContainer" style="flex: 1; display: flex; justify-content: space-between; align-items: center;">
+    <div id="chatTitle" class="chat-title"></div>
+    <button id="addUserBtn" class="logout-btn" style="background:#4CAF50; color:white;">Добавить пользователя</button>
+    <button id="leaveBtn" class="logout-btn" style="background:#ff5252; color:white;">Покинуть чат</button>
+  </div>
+</div>
+  <div id="messagesContainer" class="messages-container"></div>
+  <div class="input-area">
+    <input id="messageInput" class="message-input" placeholder="Ваше сообщение..." />
+    <button id="sendBtn" class="send-btn">Отправить</button>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>
